@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button></button>
+
+
+
+    <script>
+        
+        let html = document.getElementsByTagName("html")[0];
+        html.style.padding = "0px";
+        html.style.margin = "0px";
+        html.style.boxSizing = "border-box";
+        html.style.width = "100%";
+        html.style.height = "100%";
+
+        let body = document.getElementsByTagName("body")[0];
+        body.style.padding = "0px";
+        body.style.margin = "0px";
+        body.style.boxSizing = "border-box";
+        body.style.width = "100%";
+        body.style.height = "100%";
+        body.style.backgroundColor = "gray";
+        body.style.position = "relative";
+        
+
+        let btn = document.getElementsByTagName("button")[0];
+        btn.style.position = "absolute";
+        btn.style.left = "50%";
+        btn.style.top = "50%";
+        btn.style.transform = "translateX(-50%) translateY(-50%)";
+        btn.style.width = "300px";
+        btn.style.height = "100px";
+        btn.style.borderRadius = "10px";
+        btn.style.fontSize = "1.5rem";
+
+        btn.innerHTML = "Click Me";
+        btn.onclick = function(){
+            if (body.style.backgroundColor === "gray"){
+                body.style.backgroundColor = "yellow";
+            } else {
+                body.style.backgroundColor = "gray";
+            }
+        }
+
+        
+        
+
+    </script>
+</body>
+</html>
